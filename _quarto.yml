@@ -1,0 +1,19 @@
+installproject:
+  type: website
+
+website:
+  title: "fak_blog_4 Oct"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+
