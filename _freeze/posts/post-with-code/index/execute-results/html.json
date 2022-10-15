@@ -1,0 +1,16 @@
+{
+  "hash": "5ac0ea314671c702aa56760949972056",
+  "result": {
+    "markdown": "---\ntitle: \"The Poetry of Data\"\nauthor: \"Felicia Kohlberg\"\ndate: \"2022-10-05\"\ncategories: [statistics, life]\nimage: \"image.jpg\"\n---\n\n# The View from Here\n\n##   Responsibility\n\nData points plotted\n\nReducing people to stats\n\n*Controlling the view*\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.3.6      ✔ purrr   0.3.4 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.0      ✔ stringr 1.4.1 \n✔ readr   2.1.2      ✔ forcats 0.5.2 \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n```\n:::\n\n```{.r .cell-code}\n starwars %>%\n filter(sex == \"male\") %>%\n   filter (skin_color == \"light\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 5 × 14\n  name         height  mass hair_…¹ skin_…² eye_c…³ birth…⁴ sex   gender homew…⁵\n  <chr>         <int> <dbl> <chr>   <chr>   <chr>     <dbl> <chr> <chr>  <chr>  \n1 Owen Lars       178   120 brown,… light   blue         52 male  mascu… Tatooi…\n2 Biggs Darkl…    183    84 black   light   brown        24 male  mascu… Tatooi…\n3 Lobot           175    79 none    light   blue         37 male  mascu… Bespin \n4 Raymus Anti…    188    79 brown   light   brown        NA male  mascu… Aldera…\n5 Poe Dameron      NA    NA brown   light   brown        NA male  mascu… <NA>   \n# … with 4 more variables: species <chr>, films <list>, vehicles <list>,\n#   starships <list>, and abbreviated variable names ¹​hair_color, ²​skin_color,\n#   ³​eye_color, ⁴​birth_year, ⁵​homeworld\n```\n:::\n:::\n\n\n##   Neglect\n  \n*Footnote   Unviewed   Passed*\n\nCritical    Unimportant\n\nStruggling to be seen \n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot (starwars, aes(x=height, y=mass, color=eye_color))+\n  geom_point()+\n  labs(title = \"What Should I Be Seeing Here?\")\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: Removed 28 rows containing missing values (geom_point).\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n##    Sacred Trust\n  \nTossed   Teased   Tried   Tempted\n\nData unfurls slow slowly\n\n*View what you have wrought*\n\n\n\n[image of statistics](https://2h2fxj2oochv47z6ig3v0sve-wpengine.netdna-ssl.com/wp-content/uploads/2021/12/Hand-holding-a-tablet-with-a-hologram-of-statistics-above-it-1030x579.jpg)\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

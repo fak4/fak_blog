@@ -1,13 +1,53 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "The Poetry of Data"
+author: "Felicia Kohlberg"
 date: "2022-10-05"
-categories: [news, code, analysis]
+categories: [statistics, life]
 image: "image.jpg"
 ---
+# The View from Here
 
-This is a post with executable code.
+##   Responsibility
+
+Data points plotted
+
+Reducing people to stats
+
+*Controlling the view*
 
 ```{r}
-1 + 1
+library(tidyverse)
+ starwars %>%
+ filter(sex == "male") %>%
+   filter (skin_color == "light")
+``` 
+
+##   Neglect
+  
+*Footnote   Unviewed   Passed*
+
+Critical    Unimportant
+
+Struggling to be seen 
+
+
+
+```{r}
+ggplot (starwars, aes(x=height, y=mass, color=eye_color))+
+  geom_point()+
+  labs(title = "What Should I Be Seeing Here?")
 ```
+
+##    Sacred Trust
+  
+Tossed   Teased   Tried   Tempted
+
+Data unfurls slow slowly
+
+*View what you have wrought*
+
+
+
+[image of statistics](https://2h2fxj2oochv47z6ig3v0sve-wpengine.netdna-ssl.com/wp-content/uploads/2021/12/Hand-holding-a-tablet-with-a-hologram-of-statistics-above-it-1030x579.jpg)
+
+

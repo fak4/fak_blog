@@ -1,0 +1,29 @@
+---
+title: "Bread of the World"
+author: "Felicia Kohlberg"
+date: "2022-10-05"
+categories: [bread, international travel]
+---
+
+One of the easiest ways in to any culture is through their food. My parents traveled and lived abroad for many years, but that stopped when my sister and I came along. However, they remained omnivores in the
+broadest sense of the word, including foods from all over the world on our dinner table. These days you can get almost any ingredient you want from the local grocery store, or failing that, from the internet. No so in the 1980s. My mother\'s answer was to approach the world through its bread.
+
+I took that with me when I began to raise my family. We had five children and one income, so our international ventures were necessarily through food. Bread is welcome at most any meal (especially when you are trying to stretch the food budget!), so I have always baked a lot of it. I started making the same breads my mother had taught me -- French baguettes, challah, honey wheat -- and then began to extend my repertoire. I now regularly make Indian naan, Welsh bara brith, Italian focaccia, Egyptian sourdough, Swedish rugbrod (rye), Irish soda bread, and I even got to make traditional Mexican tortillas over a fire on a recent trip.
+
+Bread is very forgiving. Even if you don\'t do things exactly right or have just the ingredients called for, you will still usually get an edible result. Flour is the critical ingredient. Having the correct kind of flour for the type of bread you are making will go a long way toward getting the desired loaf! Gluten is the protein in flour that gives bread it\'s structure. The structure controls how much bread rises and how chewy it is. The chart below shows the amount of gluten in three common types of flour.
+
+```{r}
+
+Flour <- c("Bread", "All-Purpose", "Cake")
+Protein_Percent <- c("12-15", "10-12", "6-8")
+
+df <- data.frame(Flour, Protein_Percent)
+
+print (df)
+
+```
+
+If you want your bread to be tender, like a biscuit, cake flour is the best answer. If you are trying to make chewy bread with a thick crust, then you want bread flour. All purpose flour is sort of a compromise, it
+isn\'t great for either but can be used when you don\'t have (or want to buy for one recipe) the actually recommended flour. Although, to be fair, it makes good Irish soda bread.
+
+This blog will be dedicated to making international breads. It will give the recipes, my notes, and a few pictures to help you along. I hope you\'ll join me for my trip around the world.

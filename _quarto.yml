@@ -2,7 +2,7 @@ installproject:
   type: website
 
 website:
-  title: "fak_blog_4 Oct"
+  title: "fak_blog"
   navbar:
     right:
       - about.qmd
